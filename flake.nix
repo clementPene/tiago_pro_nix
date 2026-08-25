@@ -1,9 +1,9 @@
 {
-  inputs.gazebros2nix.url = "github:gepetto/gazebros2nix";
+  inputs.nix.url = "github:gepetto/nix";
 
   outputs =
     inputs:
-    inputs.gazebros2nix.lib.mkFlakoboros inputs (
+    inputs.nix.lib.mkFlakoboros inputs (
       { lib, ... }:
       (lib.importJSON ./wsconf.json)
       // {
@@ -18,6 +18,9 @@
           "ament-xmllint"
           "rmw-cyclonedds-cpp"
         ];
+	extraPyPackages = [
+	  "hpp-python"
+	];
       }
     );
 }
