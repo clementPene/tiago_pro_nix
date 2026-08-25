@@ -1,0 +1,233 @@
+{
+  "nodes": {
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1785627969,
+        "narHash": "sha256-4dtXQk/NMePegK/nWp5NSeuZKLATItOq61lpEvmXqGw=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "427bf4bd9435fdf21321c8cc628c24efc14c0f7a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flakoboros": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nix-ros-overlay": "nix-ros-overlay",
+        "nixpkgs": [
+          "gazebros2nix",
+          "flakoboros",
+          "nix-ros-overlay",
+          "nixpkgs"
+        ],
+        "systems": [
+          "gazebros2nix",
+          "flakoboros",
+          "nix-ros-overlay",
+          "flake-utils",
+          "systems"
+        ],
+        "treefmt-nix": "treefmt-nix"
+      },
+      "locked": {
+        "lastModified": 1787237827,
+        "narHash": "sha256-UF6T8h4cBCigdKJcq+fw/UYxTe+1aPMPuKgIYkxCZ8Q=",
+        "owner": "gepetto",
+        "repo": "flakoboros",
+        "rev": "e8d7e214135278c1613636ba347090b491c1f83c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gepetto",
+        "repo": "flakoboros",
+        "type": "github"
+      }
+    },
+    "gazebros2nix": {
+      "inputs": {
+        "flake-parts": [
+          "gazebros2nix",
+          "flakoboros",
+          "flake-parts"
+        ],
+        "flakoboros": "flakoboros",
+        "nix-ros-overlay": [
+          "gazebros2nix",
+          "flakoboros",
+          "nix-ros-overlay"
+        ],
+        "nixpkgs": [
+          "gazebros2nix",
+          "flakoboros",
+          "nixpkgs"
+        ],
+        "rosdistro": [
+          "gazebros2nix",
+          "nix-ros-overlay",
+          "rosdistro"
+        ],
+        "systems": [
+          "gazebros2nix",
+          "flakoboros",
+          "systems"
+        ],
+        "treefmt-nix": [
+          "gazebros2nix",
+          "flakoboros",
+          "treefmt-nix"
+        ]
+      },
+      "locked": {
+        "lastModified": 1787237923,
+        "narHash": "sha256-bKfJkXPxSvOkM9qfD8QkPu1Yk+kzCvHVmG8yBL6P/N4=",
+        "owner": "gepetto",
+        "repo": "gazebros2nix",
+        "rev": "63c1a81159bb1d137ec346543e9b8ad060e4608a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gepetto",
+        "repo": "gazebros2nix",
+        "type": "github"
+      }
+    },
+    "nix-ros-overlay": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "rosdistro": "rosdistro"
+      },
+      "locked": {
+        "lastModified": 1786792785,
+        "narHash": "sha256-XqhMwP19xhSDhLKxwM5NjrE2nIhcgE8DZCwZeTNtkt8=",
+        "owner": "lopsided98",
+        "repo": "nix-ros-overlay",
+        "rev": "23c58b7581d90dc371896c676d6631b393f35cc3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lopsided98",
+        "ref": "develop",
+        "repo": "nix-ros-overlay",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1785828668,
+        "narHash": "sha256-8fsyqeO+mJqvIzeO4xIpgJe/f7MTbbVTEC6RT6WSXNs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e72e4f299401a3689d4b3d5fc6496b11db7064eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1785031560,
+        "narHash": "sha256-OmshNvn2vupOFpYinLUu+1Dnpu4n7Q5N3ggGVNHpkUI=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "0e79af5e3d4dcfcd676ab5ba3f95d2e3352e078c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gazebros2nix": "gazebros2nix"
+      }
+    },
+    "rosdistro": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786735438,
+        "narHash": "sha256-rxCA2+gTQYkpngm9cY3s9gTNtStPbzlts0U3HuTtarg=",
+        "owner": "ros",
+        "repo": "rosdistro",
+        "rev": "b045bb798698b128867db5a3a81e515ecf32d38e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ros",
+        "repo": "rosdistro",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "treefmt-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "gazebros2nix",
+          "flakoboros",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785945821,
+        "narHash": "sha256-NLSyTCW4K4ofhNBllt3omPasm6QpralXH1DBZOc91Dw=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "ae7910970dddc408fe6ab1c8e4b277bb21d72dc0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
