@@ -1,5 +1,5 @@
 {
-  inputs.nix.url = "github:gepetto/nix/tf";
+  inputs.nix.url = "github:gepetto/nix";
 
   outputs =
     inputs:
@@ -20,7 +20,6 @@
         ];
 	extraPyPackages = [
 	  "hpp-python"
-	  "mujoco"
 	  "crocoddyl"
 	];
       }
