@@ -1,65 +1,47 @@
+---
 repositories:
   agimus-demos:
     type: git
     url: git@github.com:clementPene/agimus-demos.git
     version: features/tiago-pro-force-feedback
+
   agimus_controller:
     type: git
     url: git@github.com:Tiago-Pro-Harmonic/agimus_controller.git
     version: feature/tiago-pro-force-feedback
-  agimus_pytroller:
+
+  force_feedback_mpc:
     type: git
-    url: git@github.com:agimus-project/agimus_pytroller.git
+    url: git@github.com:machines-in-motion/force_feedback_mpc.git
     version: main
-  vcs_tiago_pro/launch_pal:
-    type: git
-    url: https://github.com/pal-robotics/launch_pal.git
-    version: ffe9be9ba1b5080b76b6ef97a5c408cb6d674230
-  vcs_tiago_pro/omni_base_robot:
-    type: git
-    url: https://github.com/pal-robotics/omni_base_robot.git
-    version: 925c034064c6823cf3d23f959b4b56f2f100d2af
-  vcs_tiago_pro/pal_atc:
-    type: git
-    url: https://github.com/clementPene/pal_atc.git
-    version: humble-devel
-  vcs_tiago_pro/pal_gazebo_worlds:
-    type: git
-    url: https://github.com/pal-robotics/pal_gazebo_worlds.git
-    version: 1cd336ccf572ffd35a44a627bc8508c419f653de
-  vcs_tiago_pro/pal_pro_gripper:
-    type: git
-    url: https://github.com/pal-robotics/pal_pro_gripper.git
-    version: 3588daa87cf4dd7f2310b098c03dd8d2bb27faa6
-  vcs_tiago_pro/pal_sea_arm:
-    type: git
-    url: https://github.com/clementPene/pal_sea_arm.git
-    version: humble-devel
-  vcs_tiago_pro/pal_sea_arm_moveit_config:
-    type: git
-    url: https://github.com/clementPene/pal_sea_arm_moveit_config.git
-    version: humble-devel
-  vcs_tiago_pro/pal_urdf_utils:
-    type: git
-    url: https://github.com/pal-robotics/pal_urdf_utils.git
-    version: 775cdd6886296e6c00f17dbdfd9bcdd20e0e6622
-  vcs_tiago_pro/play_motion2:
-    type: git
-    url: https://github.com/pal-robotics/play_motion2.git
-    version: 412ce28df2b867532357e0ace5d184b9049ccfd6
-  vcs_tiago_pro/tiago_pro_head_robot:
-    type: git
-    url: https://github.com/pal-robotics/tiago_pro_head_robot.git
-    version: c9ea3291f0001fd40f40770d4eed9bacd03d889d
+
   vcs_tiago_pro/tiago_pro_moveit_config:
     type: git
     url: https://github.com/clementPene/tiago_pro_moveit_config.git
     version: humble-devel
+
+  vcs_tiago_pro/pal_atc:
+    type: git
+    url: https://github.com/clementPene/pal_atc.git
+    version: humble-devel
+
+  vcs_tiago_pro/pal_gazebo_worlds:
+    type: git
+    url: https://github.com/pal-robotics/pal_gazebo_worlds.git
+    version: 4.14.1
+
+  vcs_tiago_pro/pal_sea_arm:
+    type: git
+    url: https://github.com/clementPene/pal_sea_arm.git
+    version: humble-devel
+
   vcs_tiago_pro/tiago_pro_robot:
     type: git
     url: https://github.com/clementPene/tiago_pro_robot.git
     version: humble-devel
+
   vcs_tiago_pro/tiago_pro_simulation:
     type: git
     url: https://github.com/clementPene/tiago_pro_simulation.git
     version: humble-devel
+
