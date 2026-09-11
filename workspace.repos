@@ -5,6 +5,11 @@ repositories:
     url: git@github.com:clementPene/agimus-demos.git
     version: features/tiago-pro-force-feedback
 
+  agimus-msgs:
+    type: git
+    url: git@github.com:clementPene/agimus-msgs.git
+    version: feat/w-nullspace-pos
+
   agimus_controller:
     type: git
     url: git@github.com:Tiago-Pro-Harmonic/agimus_controller.git
@@ -14,6 +19,11 @@ repositories:
     type: git
     url: git@github.com:machines-in-motion/force_feedback_mpc.git
     version: main
+
+  linear_feedback_controller_msgs:
+    type: git
+    url: git@github.com:clementPene/linear-feedback-controller-msgs.git
+    version: feat/control-next-state
 
   vcs_tiago_pro/tiago_pro_moveit_config:
     type: git
