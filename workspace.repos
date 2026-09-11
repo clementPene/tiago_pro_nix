@@ -25,6 +25,24 @@ repositories:
     url: git@github.com:clementPene/linear-feedback-controller-msgs.git
     version: feat/control-next-state
 
+  # 2026-09-11: mirrors src/agimus-demos/tiago_pro.repos (upstream's own repo
+  # list, never actually vcs-imported here -- these were silently falling
+  # back to the incomplete/mismatched Nix-provided packages, e.g. the missing
+  # omni_base_description mesh). Same order as that file. Excluded on
+  # purpose: pal_gazebo_worlds (sim-only, not needed for real-robot work)
+  # and the ros2_control stack (ros2_control/ros2_controllers/realtime_tools/
+  # control_toolbox/control_msgs/kinematics_interface -- pal-alum ABI-match
+  # packages, only needed if `list_controllers` actually breaks on robot).
+  vcs_tiago_pro/play_motion2:
+    type: git
+    url: https://github.com/pal-robotics/play_motion2.git
+    version: 1.8.6
+
+  vcs_tiago_pro/pal_sea_arm_moveit_config:
+    type: git
+    url: https://github.com/clementPene/pal_sea_arm_moveit_config.git
+    version: humble-devel
+
   vcs_tiago_pro/tiago_pro_moveit_config:
     type: git
     url: https://github.com/clementPene/tiago_pro_moveit_config.git
@@ -34,6 +52,26 @@ repositories:
     type: git
     url: https://github.com/clementPene/pal_atc.git
     version: humble-devel
+
+  vcs_tiago_pro/pal_urdf_utils:
+    type: git
+    url: https://github.com/pal-robotics/pal_urdf_utils.git
+    version: 2.9.2
+
+  vcs_tiago_pro/tiago_pro_head_robot:
+    type: git
+    url: https://github.com/pal-robotics/tiago_pro_head_robot.git
+    version: 1.12.0
+
+  vcs_tiago_pro/pal_pro_gripper:
+    type: git
+    url: https://github.com/pal-robotics/pal_pro_gripper.git
+    version: 1.12.5
+
+  vcs_tiago_pro/omni_base_robot:
+    type: git
+    url: https://github.com/pal-robotics/omni_base_robot.git
+    version: 2.17.0
 
   vcs_tiago_pro/pal_sea_arm:
     type: git
@@ -50,3 +88,7 @@ repositories:
     url: https://github.com/clementPene/tiago_pro_simulation.git
     version: humble-devel
 
+  vcs_tiago_pro/launch_pal:
+    type: git
+    url: https://github.com/pal-robotics/launch_pal.git
+    version: 0.21.1
