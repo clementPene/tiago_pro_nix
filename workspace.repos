@@ -25,6 +25,16 @@ repositories:
     url: git@github.com:clementPene/linear-feedback-controller-msgs.git
     version: feat/control-next-state
 
+  # 2026-09-24: the LFC itself, built locally (it's normally deployed to the
+  # robot with pal_deploy, not part of this workspace). Needed for local
+  # MuJoCo runs: the Nix-provided LFC is built against the OLD msgs (no
+  # Control.next_states), so it can't talk to this agimus_controller. Same
+  # branch as deployed on the robot (augmented force channel + delay comp).
+  linear-feedback-controller:
+    type: git
+    url: git@github.com:clementPene/linear-feedback-controller.git
+    version: feat/augmented-force-feedback
+
   # 2026-09-11: mirrors src/agimus-demos/tiago_pro.repos (upstream's own repo
   # list, never actually vcs-imported here -- these were silently falling
   # back to the incomplete/mismatched Nix-provided packages, e.g. the missing
