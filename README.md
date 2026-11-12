@@ -1,7 +1,7 @@
 ## Initialisation 
 
 ```bash
-nix run home-manager -- --flake github:gepetto/nix switch -b backup
+nix run git+https://gitlab.laas.fr/pi2/homes
 source ~/.bashrc
 ```
 ## Add a packet 
