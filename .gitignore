@@ -2,4 +2,16 @@
 /install/
 /log/
 /.direnv/
-/src/
+/src/*
+# Exception: odometry_gz_hw_interface is our own small local package (not
+# vcs-imported from anywhere), built as a Nix derivation from flake.nix via a
+# local `src` path. Nix flakes only copy git-tracked files into the
+# evaluation-time source tree, so it must be tracked here despite living
+# under the otherwise-vcs-managed, gitignored src/ tree. (A negated pattern
+# can't re-include a path under a directory excluded with a trailing slash
+# like the old `/src/` -- git won't even traverse into it -- hence `/src/*`
+# here instead, which excludes src's direct children one by one but still
+# lets git descend into src/ itself.)
+!/src/vcs_tiago_pro/
+/src/vcs_tiago_pro/*
+!/src/vcs_tiago_pro/odometry_gz_hw_interface/

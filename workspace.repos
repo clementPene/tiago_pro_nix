@@ -39,10 +39,18 @@ repositories:
   # list, never actually vcs-imported here -- these were silently falling
   # back to the incomplete/mismatched Nix-provided packages, e.g. the missing
   # omni_base_description mesh). Same order as that file. Excluded on
-  # purpose: pal_gazebo_worlds (sim-only, not needed for real-robot work)
-  # and the ros2_control stack (ros2_control/ros2_controllers/realtime_tools/
-  # control_toolbox/control_msgs/kinematics_interface -- pal-alum ABI-match
-  # packages, only needed if `list_controllers` actually breaks on robot).
+  # purpose: the ros2_control stack (ros2_control/ros2_controllers/
+  # realtime_tools/control_toolbox/control_msgs/kinematics_interface --
+  # pal-alum ABI-match packages, only needed if `list_controllers` actually
+  # breaks on robot).
+  # 2026-11-18: pal_gazebo_worlds re-added (was excluded as sim-only) to run
+  # the VWBC baseline demo (agimus_demo_03_mpc_dummy_traj_vwbc_tiago_pro) in
+  # Gazebo. Same pin as upstream's tiago_pro.repos.
+  vcs_tiago_pro/pal_gazebo_worlds:
+    type: git
+    url: https://github.com/pal-robotics/pal_gazebo_worlds.git
+    version: 4.14.1
+
   vcs_tiago_pro/play_motion2:
     type: git
     url: https://github.com/pal-robotics/play_motion2.git
